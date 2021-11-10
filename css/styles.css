@@ -10,6 +10,7 @@
 }
 
 body {
+  margin: 0;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 
@@ -18,6 +19,12 @@ body {
 }
 
 /* All site */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 
 .title {
   font-weight: 700;
@@ -35,6 +42,14 @@ body {
 }
 
 /* site-nav */
+
+.header-container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .logo {
   font-family: Raleway;
@@ -79,6 +94,13 @@ body {
 }
 
 /* hero */
+
+.hero-button-container {
+  box-sizing: border-box;
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .hero-title {
   color: var(--primary-white-color);
