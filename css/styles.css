@@ -26,6 +26,19 @@ body {
   box-sizing: border-box;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -41,14 +54,49 @@ body {
   list-style: none;
 }
 
-/* site-nav */
+.ul-normalize {
+  margin: 0;
+  padding: 0;
+}
 
-.header-container {
-  width: 1230px;
+.container {
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+/* site-nav */
+
+.header-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 32px;
+}
+
+.flex-nav {
+  display: flex;
+  align-items: center;
+}
+
+.flex-nav-menu {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+}
+
+.flex-nav-contact {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.nav-menu-item:not(:first-child) {
+  margin-left: 50px;
 }
 
 .logo {
@@ -93,14 +141,11 @@ body {
   color: var(--accent-color);
 }
 
-/* hero */
-
-.hero-button-container {
-  box-sizing: border-box;
-  width: 1230px;
-  margin-left: auto;
-  margin-right: auto;
+.nav-contact-item:not(:first-child) {
+  margin-left: 50px;
 }
+
+/* hero */
 
 .hero-title {
   color: var(--primary-white-color);
@@ -113,6 +158,10 @@ body {
 }
 
 .hero-button {
+  display: block;
+  margin: auto;
+  margin-bottom: 93px;
+
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -138,6 +187,20 @@ body {
 
 /* advantages */
 
+.advantages-items {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 94px;
+}
+
+.advantages-item {
+  width: 270px;
+}
+
+.advantages-item:not(:first-child) {
+  margin-left: 30px;
+}
+
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
@@ -149,6 +212,16 @@ body {
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
+}
+
+/* wedo */
+
+.wedo-ul {
+  display: flex;
+}
+
+.wedo-item:not(:first-child) {
+  margin-left: 30px;
 }
 
 /* team */
