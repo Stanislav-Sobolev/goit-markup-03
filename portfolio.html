@@ -25,7 +25,7 @@
       <nav class="flex-nav">
         <a href="" lang="en" class="logo link">Web<span class="logo-accent">Studio</span> </a>
 
-        <ul class="ul-normalize flex-nav-menu">
+        <ul class="ul-reset flex-nav-menu">
           <li class="list nav-menu-item">
             <a href="./index.html" class="link site-nav-text">Студия</a>
           </li>
@@ -37,7 +37,7 @@
           </li>
         </ul>
       </nav>
-      <ul class="ul-normalize container flex-nav-contact">
+      <ul class="ul-reset container flex-nav-contact">
         <li class="list nav-contact-item">
           <a href="mailto:info@devstudio.com" class="link site-contact">info@devstudio.com</a>
         </li>
@@ -47,35 +47,35 @@
       </ul>
     </header>
     <main>
-      <section>
+      <section class="works-section">
         <!--Скрытый заголовок-->
         <h1 class="visually-hidden">Виды работ</h1>
-        <ul>
+        <ul class="ul-reset works-buttons container">
           <li class="list">
-            <button type="button" class="button-works button-current">Все</button>
+            <button type="button" class="work-button button-current">Все</button>
           </li>
           <li class="list">
-            <button type="button" class="button-works">Веб-сайты</button>
+            <button type="button" class="work-button">Веб-сайты</button>
           </li>
           <li class="list">
-            <button type="button" class="button-works">Приложения</button>
+            <button type="button" class="work-button">Приложения</button>
           </li>
           <li class="list">
-            <button type="button" class="button-works">Дизайн</button>
+            <button type="button" class="work-button">Дизайн</button>
           </li>
           <li class="list">
-            <button type="button" class="button-works">Маркетинг</button>
+            <button type="button" class="work-button">Маркетинг</button>
           </li>
         </ul>
-        <ul>
-          <li class="list">
+        <ul class="ul-reset works-items works-container">
+          <li class="list works-item">
             <a href="" class="link">
               <img src="./images/portpholio-1.jpg" alt="ноутбук с сайтом" width="370" />
               <h2 class="works-title">Технокряк</h2>
               <p class="works-text">Веб-сайт</p>
             </a>
           </li>
-          <li class="list">
+          <li class="list works-item">
             <a href="" class="link">
               <img src="./images/portpholio-2.jpg" alt="нарисованные баскетболисты" width="370" />
 
@@ -86,7 +86,7 @@
               <p class="works-text">Дизайн</p>
             </a>
           </li>
-          <li class="list">
+          <li class="list works-item">
             <a href="" class="link">
               <img src="./images/portpholio-3.jpg" alt="название приложения" width="370" />
 
@@ -97,7 +97,7 @@
               <p class="works-text">Приложение</p>
             </a>
           </li>
-          <li class="list">
+          <li class="list works-item">
             <a href="" class="link"
               ><img src="./images/portpholio-4.jpg" alt="наушники" width="370" />
               <h2 class="works-title">
@@ -107,7 +107,7 @@
               <p class="works-text">Маркетинг</p>
             </a>
           </li>
-          <li class="list">
+          <li class="list works-item">
             <a href="" class="link"
               ><img src="./images/portpholio-5.jpg" alt="упаковка" width="370" />
               <h2 class="works-title">
@@ -117,14 +117,14 @@
               <p class="works-text">Приложение</p>
             </a>
           </li>
-          <li class="list">
+          <li class="list works-item">
             <a href="" class="link">
               <img src="./images/portpholio-6.jpg" alt="монитор с сайтом" width="370" />
               <h2 class="works-title" lang="en">Inspiration has no Borders</h2>
               <p class="works-text">Веб-сайт</p>
             </a>
           </li>
-          <li class="list">
+          <li class="list works-item">
             <a href="" class="link"
               ><img src="./images/portpholio-7.jpg" alt="журнал" width="370" />
               <h2 class="works-title">
@@ -134,7 +134,7 @@
               <p class="works-text">Дизайн</p>
             </a>
           </li>
-          <li class="list">
+          <li class="list works-item">
             <a href="" class="link">
               <img src="./images/portpholio-8.jpg" alt="бирка с названием" width="370" />
 
@@ -145,7 +145,7 @@
               <p class="works-text">Маркетинг</p>
             </a>
           </li>
-          <li class="list">
+          <li class="list works-item">
             <a href="" class="link">
               <img src="./images/portpholio-9.jpg" alt="руки на ноутбуке" width="370" />
               <h2 class="works-title" lang="en">Growing Business</h2>
@@ -156,18 +156,20 @@
       </section>
     </main>
     <footer class="footer">
-      <a href="" lang="en" class="logo link">Web<span class="logo-accent-footer">Studio</span> </a>
-      <address>
-        <ul>
-          <li class="footer-map list">г. Киев, пр-т Леси Украинки, 26</li>
-          <li class="list">
-            <a href="mailto:info@devstudio.com" class="footer-contact link">info@devstudio.com</a>
-          </li>
-          <li class="list">
-            <a href="tel:+380961111111" class="footer-contact link">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a href="/index.html" lang="en" class="footer-logo link">Web<span class="logo-accent-footer">Studio</span> </a>
+        <address>
+          <ul class="ul-reset">
+            <li class="footer-map list footer-adress">г. Киев, пр-т Леси Украинки, 26</li>
+            <li class="list footer-adress">
+              <a href="mailto:info@devstudio.com" class="footer-contact link">info@devstudio.com</a>
+            </li>
+            <li class="list footer-adress">
+              <a href="tel:+380961111111" class="footer-contact link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
