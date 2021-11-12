@@ -18,6 +18,18 @@ body {
   background-color: var(--primary-white-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* All site */
 
 *,
@@ -54,11 +66,6 @@ body {
   list-style: none;
 }
 
-.ul-reset {
-  margin: 0;
-  padding: 0;
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -67,7 +74,16 @@ body {
   margin-left: auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* site-nav */
+
+.header-border {
+  border-bottom: 1px solid #ececec;
+}
 
 .header-container {
   width: 1200px;
@@ -191,11 +207,6 @@ body {
 
 /* advantages */
 
-.advantages {
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
-
 .advantages-items {
   display: flex;
   justify-content: center;
@@ -210,6 +221,8 @@ body {
 }
 
 .advantages-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -230,7 +243,6 @@ body {
 
 .wedo-ul {
   display: flex;
-  margin-bottom: 94px;
 }
 
 .wedo-item:not(:first-child) {
@@ -241,7 +253,6 @@ body {
 
 .team {
   background-color: var(--team-bg-color);
-  padding-top: 94px;
 }
 
 .team-container {
@@ -262,7 +273,6 @@ body {
   justify-content: center;
   padding: 0;
   margin: 0;
-  padding-bottom: 94px;
 }
 
 .team-item {
@@ -353,11 +363,6 @@ body {
 /* PORTPHOLIO */
 /* Types of work */
 
-.works-section {
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
-
 .works-buttons {
   display: flex;
   justify-content: center;
@@ -407,15 +412,21 @@ body {
   flex-wrap: wrap;
 }
 
+.works-img {
+  display: block;
+}
+
 .works-item {
   width: 370px;
-  height: 404px;
-
   margin: 15px;
 
-  border-bottom: 1px solid #eeeeee;
-
   background-color: var(--primary-white-color);
+}
+
+.works-item-bottom {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .works-title {
@@ -424,10 +435,10 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
 
-  margin-top: 20;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 4px;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 4px;
 }
 
 .works-text {
