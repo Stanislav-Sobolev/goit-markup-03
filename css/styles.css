@@ -81,7 +81,6 @@ body {
 
 .flex-nav {
   display: flex;
-  align-items: center;
 }
 
 .flex-nav-menu {
